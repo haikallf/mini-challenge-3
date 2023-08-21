@@ -16,6 +16,11 @@
 		DEF242A82A93678600949C68 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DEF242A72A93678600949C68 /* Assets.xcassets */; };
 		DEF242AB2A93678600949C68 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DEF242AA2A93678600949C68 /* Preview Assets.xcassets */; };
 		DEF242B02A93678600949C68 /* G-Eco Clips.app in Embed App Clips */ = {isa = PBXBuildFile; fileRef = DEF242A12A93678400949C68 /* G-Eco Clips.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		DEF242B82A93698000949C68 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF242B72A93698000949C68 /* MainView.swift */; };
+		DEF242BE2A936AF300949C68 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF242BD2A936AF300949C68 /* WelcomeView.swift */; };
+		DEF242C12A9370C400949C68 /* InstructionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF242C02A9370C400949C68 /* InstructionsView.swift */; };
+		DEF242C42A9374D400949C68 /* CapsuleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF242C32A9374D400949C68 /* CapsuleButton.swift */; };
+		DEF242C62A9376BC00949C68 /* PleaseWaitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF242C52A9376BC00949C68 /* PleaseWaitView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +60,11 @@
 		DEF242AA2A93678600949C68 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		DEF242AC2A93678600949C68 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DEF242AD2A93678600949C68 /* G_Eco_Clips.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = G_Eco_Clips.entitlements; sourceTree = "<group>"; };
+		DEF242B72A93698000949C68 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		DEF242BD2A936AF300949C68 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
+		DEF242C02A9370C400949C68 /* InstructionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstructionsView.swift; sourceTree = "<group>"; };
+		DEF242C32A9374D400949C68 /* CapsuleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapsuleButton.swift; sourceTree = "<group>"; };
+		DEF242C52A9376BC00949C68 /* PleaseWaitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PleaseWaitView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,10 +106,13 @@
 		DEF2428E2A9366EC00949C68 /* G-Eco */ = {
 			isa = PBXGroup;
 			children = (
+				DEF242C22A9374C800949C68 /* Components */,
+				DEF242B92A936A8900949C68 /* Views */,
 				DEF2428F2A9366EC00949C68 /* G_EcoApp.swift */,
 				DEF242912A9366EC00949C68 /* ContentView.swift */,
 				DEF242932A9366ED00949C68 /* Assets.xcassets */,
 				DEF242952A9366ED00949C68 /* Preview Content */,
+				DEF242B72A93698000949C68 /* MainView.swift */,
 			);
 			path = "G-Eco";
 			sourceTree = "<group>";
@@ -131,6 +144,40 @@
 				DEF242AA2A93678600949C68 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		DEF242B92A936A8900949C68 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DEF242BF2A9370AB00949C68 /* Collective */,
+				DEF242BA2A936A9400949C68 /* Onboarding */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DEF242BA2A936A9400949C68 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				DEF242BD2A936AF300949C68 /* WelcomeView.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		DEF242BF2A9370AB00949C68 /* Collective */ = {
+			isa = PBXGroup;
+			children = (
+				DEF242C02A9370C400949C68 /* InstructionsView.swift */,
+				DEF242C52A9376BC00949C68 /* PleaseWaitView.swift */,
+			);
+			path = Collective;
+			sourceTree = "<group>";
+		};
+		DEF242C22A9374C800949C68 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				DEF242C32A9374D400949C68 /* CapsuleButton.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -236,7 +283,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				DEF242922A9366EC00949C68 /* ContentView.swift in Sources */,
+				DEF242C42A9374D400949C68 /* CapsuleButton.swift in Sources */,
+				DEF242C12A9370C400949C68 /* InstructionsView.swift in Sources */,
+				DEF242B82A93698000949C68 /* MainView.swift in Sources */,
 				DEF242902A9366EC00949C68 /* G_EcoApp.swift in Sources */,
+				DEF242C62A9376BC00949C68 /* PleaseWaitView.swift in Sources */,
+				DEF242BE2A936AF300949C68 /* WelcomeView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
