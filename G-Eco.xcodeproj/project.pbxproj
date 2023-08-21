@@ -11,6 +11,15 @@
 		C56E41B22A93BFEF003C3AF7 /* AppFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = C56E41B12A93BFEF003C3AF7 /* AppFeature.swift */; };
 		C56E41B42A93D16B003C3AF7 /* SummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C56E41B32A93D16B003C3AF7 /* SummaryView.swift */; };
 		C56E41B62A93E3C1003C3AF7 /* NavigationButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C56E41B52A93E3C1003C3AF7 /* NavigationButton.swift */; };
+		C56E41C12A940989003C3AF7 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF242B72A93698000949C68 /* MainView.swift */; };
+		C56E41C22A940993003C3AF7 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF242BD2A936AF300949C68 /* WelcomeView.swift */; };
+		C56E41C32A940995003C3AF7 /* SummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C56E41B32A93D16B003C3AF7 /* SummaryView.swift */; };
+		C56E41C42A940998003C3AF7 /* PleaseWaitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF242C52A9376BC00949C68 /* PleaseWaitView.swift */; };
+		C56E41C52A94099A003C3AF7 /* InstructionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF242C02A9370C400949C68 /* InstructionsView.swift */; };
+		C56E41C62A94099D003C3AF7 /* NavigationButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C56E41B52A93E3C1003C3AF7 /* NavigationButton.swift */; };
+		C56E41C72A94099F003C3AF7 /* CapsuleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF242C32A9374D400949C68 /* CapsuleButton.swift */; };
+		C56E41C82A9409A2003C3AF7 /* SnapCarousel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C56E41AC2A93BF7A003C3AF7 /* SnapCarousel.swift */; };
+		C56E41C92A9409A6003C3AF7 /* AppFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = C56E41B12A93BFEF003C3AF7 /* AppFeature.swift */; };
 		DEF242902A9366EC00949C68 /* G_EcoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF2428F2A9366EC00949C68 /* G_EcoApp.swift */; };
 		DEF242922A9366EC00949C68 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF242912A9366EC00949C68 /* ContentView.swift */; };
 		DEF242942A9366ED00949C68 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DEF242932A9366ED00949C68 /* Assets.xcassets */; };
@@ -321,7 +330,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				DEF242A62A93678400949C68 /* ContentView.swift in Sources */,
+				C56E41C72A94099F003C3AF7 /* CapsuleButton.swift in Sources */,
+				C56E41C92A9409A6003C3AF7 /* AppFeature.swift in Sources */,
+				C56E41C42A940998003C3AF7 /* PleaseWaitView.swift in Sources */,
+				C56E41C12A940989003C3AF7 /* MainView.swift in Sources */,
+				C56E41C32A940995003C3AF7 /* SummaryView.swift in Sources */,
+				C56E41C52A94099A003C3AF7 /* InstructionsView.swift in Sources */,
+				C56E41C62A94099D003C3AF7 /* NavigationButton.swift in Sources */,
 				DEF242A42A93678400949C68 /* G_Eco_ClipsApp.swift in Sources */,
+				C56E41C22A940993003C3AF7 /* WelcomeView.swift in Sources */,
+				C56E41C82A9409A2003C3AF7 /* SnapCarousel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
