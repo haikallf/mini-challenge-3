@@ -48,10 +48,13 @@ struct PleaseWaitView: View {
                     .stroke(AngularGradient(colors: [Color.white, Color.white.opacity(0)], center: .center, startAngle: .degrees(45), endAngle: .degrees(450)), lineWidth: 8)
                     .frame(width: 48, height: 48)
                     .rotationEffect(Angle(degrees: isLoading ? 360 : 0))
-                    .animation(Animation.linear(duration: 1).repeatForever(autoreverses: false))
                     .padding(.top, 48)
                     .onAppear() {
-                        self.isLoading = true
+                        DispatchQueue.main.async {
+                            withAnimation(Animation.linear(duration: 1).repeatForever(autoreverses: false)) {
+                                self.isLoading = true
+                            }
+                        }
                     }
                 
                 //MARK: Carousel Section
@@ -91,6 +94,7 @@ struct PleaseWaitView: View {
             }
             .frame(maxHeight: .infinity, alignment: .top)
         }
+        .navigationBarBackButtonHidden()
     }
 }
 

@@ -56,7 +56,7 @@ struct SummaryView: View {
                         .font(.system(size: 20))
                         .fontWeight(.semibold)
                         .cornerRadius(20)
-                        .overlay( /// apply a rounded border
+                        .overlay(
                             RoundedRectangle(cornerRadius: 20)
                                 .stroke(.white, lineWidth: 1)
                         )

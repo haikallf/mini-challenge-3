@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct InstructionsView: View {
+    @State private var runAnimation: Bool = false
+    
     var body: some View {
         VStack(spacing: 0) {
             VStack(spacing: 58) {
@@ -24,9 +26,27 @@ struct InstructionsView: View {
                 }
                 
                 //MARK: Trash Animation
-                Circle()
-                    .fill(.white)
-                    .frame(width: 150, height: 150)
+                ZStack {
+                    Circle()
+                        .fill(.white.opacity(0.2))
+                        .frame(width: runAnimation ? 200 : 150)
+                        .animation(Animation.linear(duration: 0.8).repeatForever(autoreverses: true))
+                    
+                    Circle()
+                        .fill(.white.opacity(0.1))
+                        .frame(width: runAnimation ? 250 : 200)
+                        .animation(Animation.linear(duration: 0.8).repeatForever(autoreverses: true))
+                    
+                    Circle()
+                        .fill(.white)
+                        .frame(width: 150, height: 150)
+                    
+                    Image("box")
+                }
+                .onAppear {
+                    self.runAnimation.toggle()
+                }
+                
                 
                 //MARK: Instruction Text
                 Text("Gently place your e-waste inside the designated area.")
@@ -37,8 +57,10 @@ struct InstructionsView: View {
             .foregroundColor(.white)
             
             //MARK: Continue Button
-            CapsuleButton(label: "Done", onTap: {})
+            NavigationButton(destination: PleaseWaitView(), text: "Done")
                 .padding(.top, 40)
+//            CapsuleButton(label: "Done", onTap: {})
+//                .padding(.top, 40)
             
         }
     }

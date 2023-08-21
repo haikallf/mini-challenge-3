@@ -8,6 +8,10 @@
 import SwiftUI
 
 struct MainView: View {
+    @State private var isActive: Bool = false
+    @State private var opacity: Double = 0
+    
+    
     var body: some View {
         ZStack {
             //MARK: Background
@@ -15,10 +19,25 @@ struct MainView: View {
                 .ignoresSafeArea()
             
             VStack {
-//                WelcomeView()
-//                InstructionsView()
-//                PleaseWaitView()
-                SummaryView()
+                if (isActive) {
+                    InstructionsView()
+                } else {
+                    WelcomeView()
+                        .opacity(opacity)
+                        .onAppear {
+                            withAnimation(.easeIn(duration: 1.2)) {
+                                self.opacity = 1
+                            }
+                        }
+                        .onAppear {
+                            DispatchQueue.main.asyncAfter(deadline: .now() + 3.5) {
+                                withAnimation {
+                                    self.isActive = true
+                                }
+                                
+                            }
+                        }
+                }
             }
             .padding()
         }
