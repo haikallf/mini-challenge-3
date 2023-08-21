@@ -12,6 +12,7 @@ struct ContentView: View {
         NavigationView {
             MainView()
         }
+        .colorScheme(.light)
     }
 }
 

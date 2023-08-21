@@ -28,7 +28,7 @@ struct WelcomeView: View {
 
             //MARK: Main Section
             VStack(spacing: 34) {
-                Image("dropbox")
+                Image("splash")
                 
                 Text("G-_Eco_!")
                     .font(.system(size: 64))

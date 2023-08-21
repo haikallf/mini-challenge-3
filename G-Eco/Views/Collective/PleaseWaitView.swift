@@ -24,6 +24,9 @@ struct PleaseWaitView: View {
                 SummaryView()
             } else {
                 ZStack {
+                    Color.white
+                        .ignoresSafeArea()
+                    
                     VStack {
                         Image("ellipse")
                             .resizable()

@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct SummaryView: View {
+    let image = Image("achievement")
+    
     var body: some View {
         ZStack {
             //MARK: Background
@@ -49,9 +51,9 @@ struct SummaryView: View {
                 }
                 
                 //MARK: Footer Section
-                HStack {
+                HStack(spacing: 16) {
                     Button(action: {
-                        
+                        UIApplication.shared.perform(#selector(NSXPCConnection.suspend))
                     }, label: {
                         Text("Done")
                             .padding(.vertical, 12)
@@ -66,12 +68,24 @@ struct SummaryView: View {
                                     .stroke(.white, lineWidth: 1)
                             )
                     })
+//                    NavigationButton(destination: InstructionsView().navigationBarBackButtonHidden(), text: "Done", isBordered: true)
                     
-                    Image(systemName: "square.and.arrow.up")
-                        .font(.title)
-                        .foregroundColor(.white)
+                    //MARK: Share Button
+                    ShareLink(
+                        item: image,
+                        message: Text("hai"),
+                        preview: SharePreview(
+                            "Badge Achievement",
+                            image: image
+                        )
+                    ) {
+                        Image(systemName: "square.and.arrow.up")
+                            .font(.title)
+                            .foregroundColor(.white)
+                    }
+                    
                 }
-                .padding(.horizontal, 17)
+                .padding(.horizontal, 28)
                 .padding(.top, 45)
             }
         }
