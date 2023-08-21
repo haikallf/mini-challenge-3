@@ -8,16 +8,27 @@
 import SwiftUI
 
 struct PleaseWaitView: View {
+    @State var currentIndex: Int = 0
+    @State var posts: [AppFeature] = AppFeature.all
+    
+    @State private var isLoading = false
+    
+    @State var currectTab = "Slide Show"
+    @Namespace var animation
+    
     var body: some View {
         ZStack {
-            Rectangle()
-                .foregroundColor(Color("primaryBlue"))
-                .frame(width: 636.29663, height: 511.36307)
-                .cornerRadius(636.29663)
-                .rotationEffect(Angle(degrees: -16.33))
-                .offset(CGSize(width: 100, height: -340))
-
             VStack {
+                Image("ellipse")
+                    .resizable()
+                    .frame(width: 394)
+                    .aspectRatio(contentMode: .fit)
+                    .ignoresSafeArea()
+                
+                Spacer()
+            }
+           
+            VStack(spacing: 0){
                 //MARK: Heading Section
                 VStack(spacing: 16) {
                     Text("Please wait...")
@@ -29,17 +40,56 @@ struct PleaseWaitView: View {
                         .font(.system(size: 17))
                         .kerning(0.374)
                 }
+                .padding(.top, 63)
+                .foregroundColor(.white)
                 
                 //MARK: Loading Spinner
                 Circle()
-                    .fill(.white)
-                    .frame(width: 60, height: 60)
+                    .stroke(AngularGradient(colors: [Color.white, Color.white.opacity(0)], center: .center, startAngle: .degrees(45), endAngle: .degrees(450)), lineWidth: 8)
+                    .frame(width: 48, height: 48)
+                    .rotationEffect(Angle(degrees: isLoading ? 360 : 0))
+                    .animation(Animation.linear(duration: 1).repeatForever(autoreverses: false))
+                    .padding(.top, 48)
+                    .onAppear() {
+                        self.isLoading = true
+                    }
                 
-                //MARK: TabView Section
+                //MARK: Carousel Section
                 Text("Check out our **full app** for full experiences!")
                     .multilineTextAlignment(.center)
                     .foregroundColor(Color("secondaryBlue"))
+                    .padding(.top, 72)
+                    .padding(.bottom, 19)
+                
+                SnapCarousel(index: $currentIndex, items: posts) { post  in
+                    GeometryReader{proxy in
+                        Image(post.filename)
+                            .resizable()
+                            .aspectRatio(contentMode: .fit)
+                            .frame(width: 270, height: 250)
+                            .shadow(radius: 4)
+                    }
+                }
+                .frame(height: 270)
+            
+                //MARK: Dot Indicator
+                HStack(spacing: 10){
+                    ForEach(posts.indices, id: \.self){index in
+                        Circle()
+                            .fill(currentIndex == index ? Color("gray") : Color("lightGray"))
+                            .frame(width: 9, height: 9)
+                            .animation(.spring(), value: currentIndex == index)
+                    }
+                }
+                
+                //MARK: Footer Section
+                HStack {
+                    Image("ewaste")
+                    Image("appStore")
+                }
+                .padding(.top, 29)
             }
+            .frame(maxHeight: .infinity, alignment: .top)
         }
     }
 }

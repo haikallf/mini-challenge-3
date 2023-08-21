@@ -17,7 +17,8 @@ struct MainView: View {
             VStack {
 //                WelcomeView()
 //                InstructionsView()
-                PleaseWaitView()
+//                PleaseWaitView()
+                SummaryView()
             }
             .padding()
         }
