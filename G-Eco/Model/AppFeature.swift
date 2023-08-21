@@ -10,7 +10,6 @@ import SwiftUI
 struct AppFeature: Identifiable, Equatable {
     let id: Int
     let filename: String
-    
 }
 
 extension AppFeature {

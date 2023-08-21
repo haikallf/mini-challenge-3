@@ -11,7 +11,6 @@ struct MainView: View {
     @State private var isActive: Bool = false
     @State private var opacity: Double = 0
     
-    
     var body: some View {
         ZStack {
             //MARK: Background

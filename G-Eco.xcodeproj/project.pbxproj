@@ -185,7 +185,6 @@
 			children = (
 				DEF242C02A9370C400949C68 /* InstructionsView.swift */,
 				DEF242C52A9376BC00949C68 /* PleaseWaitView.swift */,
-				C56E41AC2A93BF7A003C3AF7 /* SnapCarousel.swift */,
 				C56E41B32A93D16B003C3AF7 /* SummaryView.swift */,
 			);
 			path = Collective;
@@ -194,6 +193,7 @@
 		DEF242C22A9374C800949C68 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				C56E41AC2A93BF7A003C3AF7 /* SnapCarousel.swift */,
 				DEF242C32A9374D400949C68 /* CapsuleButton.swift */,
 				C56E41B52A93E3C1003C3AF7 /* NavigationButton.swift */,
 			);

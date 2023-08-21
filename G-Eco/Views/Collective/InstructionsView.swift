@@ -59,9 +59,6 @@ struct InstructionsView: View {
             //MARK: Continue Button
             NavigationButton(destination: PleaseWaitView(), text: "Done")
                 .padding(.top, 40)
-//            CapsuleButton(label: "Done", onTap: {})
-//                .padding(.top, 40)
-            
         }
     }
 }
