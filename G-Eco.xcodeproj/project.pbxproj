@@ -1,0 +1,534 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DEF242902A9366EC00949C68 /* G_EcoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF2428F2A9366EC00949C68 /* G_EcoApp.swift */; };
+		DEF242922A9366EC00949C68 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF242912A9366EC00949C68 /* ContentView.swift */; };
+		DEF242942A9366ED00949C68 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DEF242932A9366ED00949C68 /* Assets.xcassets */; };
+		DEF242972A9366ED00949C68 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DEF242962A9366ED00949C68 /* Preview Assets.xcassets */; };
+		DEF242A42A93678400949C68 /* G_Eco_ClipsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF242A32A93678400949C68 /* G_Eco_ClipsApp.swift */; };
+		DEF242A62A93678400949C68 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF242A52A93678400949C68 /* ContentView.swift */; };
+		DEF242A82A93678600949C68 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DEF242A72A93678600949C68 /* Assets.xcassets */; };
+		DEF242AB2A93678600949C68 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DEF242AA2A93678600949C68 /* Preview Assets.xcassets */; };
+		DEF242B02A93678600949C68 /* G-Eco Clips.app in Embed App Clips */ = {isa = PBXBuildFile; fileRef = DEF242A12A93678400949C68 /* G-Eco Clips.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DEF242AE2A93678600949C68 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DEF242842A9366EC00949C68 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DEF242A02A93678400949C68;
+			remoteInfo = "G-Eco Clips";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		DEF242B42A93678600949C68 /* Embed App Clips */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/AppClips";
+			dstSubfolderSpec = 16;
+			files = (
+				DEF242B02A93678600949C68 /* G-Eco Clips.app in Embed App Clips */,
+			);
+			name = "Embed App Clips";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		DEF2428C2A9366EC00949C68 /* G-Eco.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "G-Eco.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DEF2428F2A9366EC00949C68 /* G_EcoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = G_EcoApp.swift; sourceTree = "<group>"; };
+		DEF242912A9366EC00949C68 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		DEF242932A9366ED00949C68 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DEF242962A9366ED00949C68 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		DEF242A12A93678400949C68 /* G-Eco Clips.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "G-Eco Clips.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DEF242A32A93678400949C68 /* G_Eco_ClipsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = G_Eco_ClipsApp.swift; sourceTree = "<group>"; };
+		DEF242A52A93678400949C68 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		DEF242A72A93678600949C68 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DEF242AA2A93678600949C68 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		DEF242AC2A93678600949C68 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DEF242AD2A93678600949C68 /* G_Eco_Clips.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = G_Eco_Clips.entitlements; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DEF242892A9366EC00949C68 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DEF2429E2A93678400949C68 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DEF242832A9366EC00949C68 = {
+			isa = PBXGroup;
+			children = (
+				DEF2428E2A9366EC00949C68 /* G-Eco */,
+				DEF242A22A93678400949C68 /* G-Eco Clips */,
+				DEF2428D2A9366EC00949C68 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DEF2428D2A9366EC00949C68 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DEF2428C2A9366EC00949C68 /* G-Eco.app */,
+				DEF242A12A93678400949C68 /* G-Eco Clips.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DEF2428E2A9366EC00949C68 /* G-Eco */ = {
+			isa = PBXGroup;
+			children = (
+				DEF2428F2A9366EC00949C68 /* G_EcoApp.swift */,
+				DEF242912A9366EC00949C68 /* ContentView.swift */,
+				DEF242932A9366ED00949C68 /* Assets.xcassets */,
+				DEF242952A9366ED00949C68 /* Preview Content */,
+			);
+			path = "G-Eco";
+			sourceTree = "<group>";
+		};
+		DEF242952A9366ED00949C68 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				DEF242962A9366ED00949C68 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		DEF242A22A93678400949C68 /* G-Eco Clips */ = {
+			isa = PBXGroup;
+			children = (
+				DEF242A32A93678400949C68 /* G_Eco_ClipsApp.swift */,
+				DEF242A52A93678400949C68 /* ContentView.swift */,
+				DEF242A72A93678600949C68 /* Assets.xcassets */,
+				DEF242AC2A93678600949C68 /* Info.plist */,
+				DEF242AD2A93678600949C68 /* G_Eco_Clips.entitlements */,
+				DEF242A92A93678600949C68 /* Preview Content */,
+			);
+			path = "G-Eco Clips";
+			sourceTree = "<group>";
+		};
+		DEF242A92A93678600949C68 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				DEF242AA2A93678600949C68 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DEF2428B2A9366EC00949C68 /* G-Eco */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DEF2429A2A9366ED00949C68 /* Build configuration list for PBXNativeTarget "G-Eco" */;
+			buildPhases = (
+				DEF242882A9366EC00949C68 /* Sources */,
+				DEF242892A9366EC00949C68 /* Frameworks */,
+				DEF2428A2A9366EC00949C68 /* Resources */,
+				DEF242B42A93678600949C68 /* Embed App Clips */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DEF242AF2A93678600949C68 /* PBXTargetDependency */,
+			);
+			name = "G-Eco";
+			productName = "G-Eco";
+			productReference = DEF2428C2A9366EC00949C68 /* G-Eco.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DEF242A02A93678400949C68 /* G-Eco Clips */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DEF242B12A93678600949C68 /* Build configuration list for PBXNativeTarget "G-Eco Clips" */;
+			buildPhases = (
+				DEF2429D2A93678400949C68 /* Sources */,
+				DEF2429E2A93678400949C68 /* Frameworks */,
+				DEF2429F2A93678400949C68 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "G-Eco Clips";
+			productName = "G-Eco Clips";
+			productReference = DEF242A12A93678400949C68 /* G-Eco Clips.app */;
+			productType = "com.apple.product-type.application.on-demand-install-capable";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DEF242842A9366EC00949C68 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					DEF2428B2A9366EC00949C68 = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+					DEF242A02A93678400949C68 = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+				};
+			};
+			buildConfigurationList = DEF242872A9366EC00949C68 /* Build configuration list for PBXProject "G-Eco" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DEF242832A9366EC00949C68;
+			productRefGroup = DEF2428D2A9366EC00949C68 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DEF2428B2A9366EC00949C68 /* G-Eco */,
+				DEF242A02A93678400949C68 /* G-Eco Clips */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DEF2428A2A9366EC00949C68 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DEF242972A9366ED00949C68 /* Preview Assets.xcassets in Resources */,
+				DEF242942A9366ED00949C68 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DEF2429F2A93678400949C68 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DEF242AB2A93678600949C68 /* Preview Assets.xcassets in Resources */,
+				DEF242A82A93678600949C68 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DEF242882A9366EC00949C68 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DEF242922A9366EC00949C68 /* ContentView.swift in Sources */,
+				DEF242902A9366EC00949C68 /* G_EcoApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DEF2429D2A93678400949C68 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DEF242A62A93678400949C68 /* ContentView.swift in Sources */,
+				DEF242A42A93678400949C68 /* G_Eco_ClipsApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DEF242AF2A93678600949C68 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DEF242A02A93678400949C68 /* G-Eco Clips */;
+			targetProxy = DEF242AE2A93678600949C68 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		DEF242982A9366ED00949C68 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DEF242992A9366ED00949C68 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DEF2429B2A9366ED00949C68 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"G-Eco/Preview Content\"";
+				DEVELOPMENT_TEAM = KYR4X9M655;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "haikallazuardi.G-Eco";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DEF2429C2A9366ED00949C68 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"G-Eco/Preview Content\"";
+				DEVELOPMENT_TEAM = KYR4X9M655;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "haikallazuardi.G-Eco";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		DEF242B22A93678600949C68 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "G-Eco Clips/G_Eco_Clips.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"G-Eco Clips/Preview Content\"";
+				DEVELOPMENT_TEAM = KYR4X9M655;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "G-Eco Clips/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "G-Eco";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "haikallazuardi.G-Eco.Clip";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DEF242B32A93678600949C68 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "G-Eco Clips/G_Eco_Clips.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"G-Eco Clips/Preview Content\"";
+				DEVELOPMENT_TEAM = KYR4X9M655;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "G-Eco Clips/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "G-Eco";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "haikallazuardi.G-Eco.Clip";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DEF242872A9366EC00949C68 /* Build configuration list for PBXProject "G-Eco" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DEF242982A9366ED00949C68 /* Debug */,
+				DEF242992A9366ED00949C68 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DEF2429A2A9366ED00949C68 /* Build configuration list for PBXNativeTarget "G-Eco" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DEF2429B2A9366ED00949C68 /* Debug */,
+				DEF2429C2A9366ED00949C68 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DEF242B12A93678600949C68 /* Build configuration list for PBXNativeTarget "G-Eco Clips" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DEF242B22A93678600949C68 /* Debug */,
+				DEF242B32A93678600949C68 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DEF242842A9366EC00949C68 /* Project object */;
+}
